@@ -5,18 +5,18 @@ function btnLike(){
   var counter = document.getElementById("counter");
   var incrementBtn = document.getElementById("btnLike");
 
-  if(incrementBtn.textContent === "Like"){
-      incrementBtn.textContent = "Dislike";
-      incrementBtn.style.backgroundColor = "white";
-      incrementBtn.style.color = "black";
+  if(incrementBtn.textContent === "Me gusta"){
+      incrementBtn.textContent = "No me gusta";
+      incrementBtn.style.backgroundColor = "#193A4D";
+      incrementBtn.style.color = "white";
       count++;
       counter.innerText = count; 
   }
   else {
     count = 201
-    incrementBtn.textContent = "Like";
-    incrementBtn.style.backgroundColor = "black";
-    incrementBtn.style.color = "white";
+    incrementBtn.textContent = "Me gusta";
+    incrementBtn.style.backgroundColor = "#BEDDEF";
+    incrementBtn.style.color = "black";
     count--;
     counter.innerText = count; 
   }
@@ -28,11 +28,11 @@ function cambiarBotonFollow() {
 var btnFollow = document.getElementById("btnFollow");
   
   if (btnFollow.textContent === "Seguir") {
-    btnFollow.style.backgroundColor = "white";
-    btnFollow.style.color = "black";
+    btnFollow.style.backgroundColor = "#185018";
+    btnFollow.style.color = "white";
     btnFollow.textContent = "Dejar de seguir ";
   } else {
-    btnFollow.style.backgroundColor = "black";
+    btnFollow.style.backgroundColor = "#2AA02A";
     btnFollow.style.color = "white";
     btnFollow.textContent = "Seguir";
    }
@@ -74,7 +74,7 @@ function comentar(){
   function agregarComentario() {
     const comentario = inputComentario.value;
     if (comentario.trim() !== "") {
-      const item = document.createElement("li");
+      const item = document.createElement("");
       item.appendChild(document.createTextNode(comentario));
       listaComentario.appendChild(item);
       inputComentario.value = "";
