@@ -30,11 +30,11 @@
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">Jane Doe</h1>
           <ul >
-            <li >Email: jane_doe@gmail.com</li>
-            <li >Fecha de nacimiento: 01/05/1996</li>
-            <li>Telefono: 3576523221</li>
-            <li >Ciudad: Tokyo, japon</li>
-            <li >Trabajando en Lawn N</li>
+            <li ><strong>Email:</strong> jane_doe@gmail.com</li>
+            <li ><strong>Fecha de nacimiento:</strong> 01/05/1996</li>
+            <li><strong>Celular:</strong> 3576523221</li>
+            <li ><strong>Ciudad:</strong> Tokyo, japon</li>
+            <li ><strong>Trabajando en Lawn N</strong> </li>
           </ul>
           <img src="mujer-hermosa-joven-mirando-camara-chica-moda-verano-casual-camiseta-blanca-pantalones-cortos-hembra-positiva-muestra-emociones-faciales-mode.jpg" alt="mujer" class="mujer">
           <br>
@@ -52,13 +52,11 @@
               <button id="btnLike" onclick="btnLike()">Like</button>
           </div>
 
-            <form>
-                    <input type="text" id="descripcion" placeholder="Deja tu comentario">
-                <input type="submit" id="boton-agregar-tarea" value="Comentar">
-            </form>
-            <h2>Comentarios: </h2>
-            <ul id="lista-de-tareas">
-            </ul>
+          <h1>Lista de Comentario</h1>
+          <input type="text" id="input-comentario" placeholder="Deja tu comentario...">
+          <button id="agregar" onclick="comentar()">Agregar</button>
+          <ul id="lista-comentario"></ul>
+
           </div>
         </div>
         <div class="col-md-6">
