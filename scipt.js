@@ -6,7 +6,7 @@ function btnLike(){
   var incrementBtn = document.getElementById("btnLike");
 
   if(incrementBtn.textContent === "Me gusta"){
-      incrementBtn.textContent = "No me gusta";
+      incrementBtn.textContent = "Ya no me gusta";
       incrementBtn.style.backgroundColor = "#193A4D";
       incrementBtn.style.color = "white";
       count++;
@@ -56,7 +56,6 @@ function agregarTarea(evento) {
     document.getElementById('lista-de-tareas').appendChild(listItem);
 }
 document.getElementById('boton-agregar-tarea').addEventListener('click', agregarTarea);
-
 
 
 function comentar(){
