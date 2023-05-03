@@ -51,7 +51,7 @@ function agregarTarea(evento) {
         return;
     }
     let text = document.createTextNode(nombre + ': ' + descripcion);
-    let listItem = document.createElement('li');
+    let listItem = document.createElement('p');
     listItem.appendChild(text);
     document.getElementById('lista-de-tareas').appendChild(listItem);
 }
@@ -74,7 +74,7 @@ function comentar(){
   function agregarComentario() {
     const comentario = inputComentario.value;
     if (comentario.trim() !== "") {
-      const item = document.createElement("");
+      const item = document.createElement("p");
       item.appendChild(document.createTextNode(comentario));
       listaComentario.appendChild(item);
       inputComentario.value = "";
